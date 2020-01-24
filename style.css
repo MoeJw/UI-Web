@@ -7,6 +7,7 @@ html,body{
 }
 h1{
     margin: 0px;;
+    font-size: 28px;
 }
 
 #header{
@@ -32,25 +33,20 @@ h1{
 }
 /********=======================================================================***********/
 .left-header{
+     /* border: 1px solid black;*/
     display: flex;
+    flex-shrink: 2;
+   width: 40%;
     box-sizing: border-box;
-   /* border: 1px solid black;*/
-   border: 1px solid black;
+  
    padding:5px;
-    justify-content: flex-end;
-    width: 40%;
+    justify-content: center;
+    
    
 }
-.nav-ul li{
-    font-weight: normal;
-    text-transform: uppercase;
-    padding-top: 15px;
-    font-size: 14px;
-    margin-right: 5%;
-    text-transform: uppercase;
-   
 
-}
+
+
 /********=======================================================================***********/
 
 
@@ -58,7 +54,7 @@ h1{
    /* border: 1px solid black;*/
    box-sizing: border-box;
     width: 70%;
-    border: 1px solid black;
+   
     /*background: blue;;*/
   
 }
@@ -69,23 +65,133 @@ h1{
    box-sizing: border-box;
  /*  border: 1px solid black;*/
     display:flex;
-    border: 1px solid black;
+    
    margin-left: auto;
-   margin-right: 15%;
+   margin-right: 5%;
    font-family: Arial, Helvetica, sans-serif;
     padding :0px;
   
-   justify-content: space-evenly;
    
+   
+}
+.nav-ul li{
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-size: 14px;
+    margin-right: 5%;
+    text-transform: uppercase;
 }
 .nav-ul li{
     color :#444;
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
-    margin-left: 5px;
+   
 }
 .test{
     display: none;
 }
 /********=======================================================================***********/
+
+/* the intial width of lef-header is 40% and it should be shrinked down along with the
+    size of the window
+    the intial widt of right-header is 70%
+*/
+
+@media screen and (max-width:951px){
+    .left-header{
+       /* background-color: red;*/
+       width: 25%;
+    }
+    #right-header{
+        width:75% ;
+    }
+    .nav-ul {
+        margin-right: 0px;
+        justify-content: flex-end;
+    }
+}
+
+
+
+@media screen and (max-width:767px) {
+    .left-header{
+        width: 40%;
+        justify-content: center;
+    }
+    #right-header{
+      
+        /* background-color: red;*/
+      
+         width: 60%;
+         
+     }
+    .nav-ul{
+        /*background-color: yellow;*/
+        
+        display: none;
+    }
+    .test{
+        
+        width: 59%;
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+    .test label{
+        margin-left: 40%;
+    }
+    .container{
+        flex-wrap: wrap ;
+    }
+   .nav-ul li{
+        margin-left:10% ;
+    }
+    .nav-ul #contact{
+        margin-left:10% ;
+    }
+  
+    #toggle:checked + * .nav-ul {
+        display:flex ;
+       
+        flex-direction: column;
+
+    }
+}
+   
+#toggle{
+    display: none;
+}
+#contact{
+    margin-left:auto;
+}
+.m{
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    align-self: center;
+    border:1px solid  rgb(229, 229, 229);;
+    margin-left: auto;
+    margin-right: 5%;
+    border-radius: .25rem;
+  
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url(burger-ico.svg);
+}
+label{
+    display: flex;
+  
+    padding: .25rem .75rem;
+ 
+  
+    background: no-repeat center center;
+    background-size: 100% 100%;
+   
+
+}
 
