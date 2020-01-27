@@ -15,30 +15,33 @@ content{
 }
 container{
  
-  padding-top: 50px;
+  padding-top:50px;
   display: flex;
   
   flex-direction: column;
   align-items: center;
   
 }
-.groub{
-width: 100%;
-display: flex;
-}
 
 cards{
- width: 30%;
-  margin-top: 40PX;
+ width: 100%;
+  margin-top: 50px;
   display: flex;
   height: 100%;
   flex-direction: row;
- justify-content: space-around;
+  justify-content: center;
+ 
 
 }
+#mid-plan{
+  margin:25px 50px ;
+  
+}
 .plan{
+
+  margin-top: 40PX;
   position: relative;
-  width: 60%; /* control the size of the card*/
+  width: 22%; /* control the size of the card*/
   background-color: white;
   border-radius: 5px 5px 5px;
 
@@ -63,6 +66,7 @@ cards{
 }
 
 .plan .title{
+  border-radius: 5px 5px 5px;
   padding-top: 30px;
   padding-bottom:70px;
   text-align: center;
