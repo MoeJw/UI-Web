@@ -1,23 +1,10 @@
-html,body{
-    height:100%;
-    margin: 0;
-    font-family: 'Lato', arial, sans-serif;
-    /*background-color: #f7f7f7;*/
-  
-}
-h1{
-    margin: 0px;;
-    font-size: 28px;
-    color: #444;
-}
 
 #header{
     width: 100%;
-    padding-bottom: 7px;
+    padding: 1px 0px;
     box-sizing: border-box;
     background: #fff;
     position: fixed;
-    
     box-shadow: 0 0 4px rgba(0,0,0,0.4);
     z-index: 5;
 
@@ -40,7 +27,8 @@ h1{
     flex-shrink: 2;
    width: 40%;
     box-sizing: border-box;
-    
+  
+   padding:5px;
     justify-content: center;
     
    
@@ -68,7 +56,7 @@ h1{
     display:flex;
     
    margin-left: auto;
-   margin-right: 15%;
+   margin-right: 5%;
    font-family: Arial, Helvetica, sans-serif;
     padding :0px;
   
@@ -78,22 +66,94 @@ h1{
 .nav-ul li{
     font-weight: normal;
     text-transform: uppercase;
-    align-self: center;
+    padding-top: 15px;
     font-size: 14px;
-    padding-top: 10px;
     margin-right: 5%;
     text-transform: uppercase;
 }
 .nav-ul li{
     color :#444;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', arial, sans-serif;
     list-style-type: none;
    
 }
+ .nav-ul li:hover{
+        color: #56bc94;
+    }
 .test{
     display: none;
 }
 /********=======================================================================***********/
+@media screen and (max-width:1920px) {
+    .left-header{
+     width: 55%;
+     justify-content: center;
+ }
+ #right-header{
+   
+    /* background-color: black;*/
+         
+     
+ }
+ .nav-ul{
+   
+  width: 80%;
+ }
+}
+@media screen and (max-width:1400px) {
+       .left-header{
+        width: 30%;
+        justify-content: center;
+    }
+    #right-header{
+      
+       /* background-color: black;*/
+           
+        
+    }
+    .nav-ul{
+      
+     width: 80%;
+    }
+}
+    @media screen and (max-width:1200px) {
+        .left-header{
+            width: 38%;
+            justify-content: center;
+        }
+        #right-header{
+          
+           /* background-color: black;*/
+          
+            
+            
+        }
+        .nav-ul{
+          
+         width: 90%;
+        }
+    }
+
+   @media screen and (max-width:1000px) {
+    #right-header{
+      
+        /* background-color: red;*/
+      
+         width: 75%;
+         
+     }
+    .left-header{
+        width: 25%;
+        justify-content: center;
+    }
+    .nav-ul{
+       
+     width: 100%;
+    }
+    .nav-ul li{
+        margin-right: 3%
+    }
+   }
 
 /* the intial width of lef-header is 40% and it should be shrinked down along with the
     size of the window
@@ -103,25 +163,14 @@ h1{
 @media screen and (max-width:951px){
     .left-header{
        /* background-color: red;*/
-      
        width: 25%;
-       justify-content: flex-end;
     }
     #right-header{
-        
-        justify-content: flex-start;
         width:75% ;
     }
     .nav-ul {
-        
-         
-        justify-content: flex-start;
-    }
-    #f{
-        margin-right: auto;  /*due to lack of space we move the navbar to right*/
-    }
-    .nav-ul  #contact{  /* and make some space to the left */
-        margin-left: 5%;
+        margin-right: 0px;
+        justify-content: flex-end;
     }
 }
 
@@ -147,25 +196,23 @@ h1{
     .test{
         
         width: 59%;
-        
+        padding-top: 15px;
         display: flex;
-        justify-content: center;
         
     }
     .test label{
-        margin-left: 40%;
+      
     }
     .container{
         flex-wrap: wrap ;
     }
-   .nav-ul li{   /*to align the nav under the log */
-        margin-left:10% ;  /*to make some space to the right bettwen the window and the nav*/
-        margin-right: auto; 
+   .nav-ul li{
+        margin-left:14% ;
     }
-   .nav-ul #contact{
-    margin-left:10% ;   /*reset the value margin of contact to 10%*/
-   }
-    
+   
+    .nav-ul #contact{
+        margin-left:14% ;
+    }
   
     #toggle:checked + * .nav-ul {
         display:flex ;
@@ -173,7 +220,6 @@ h1{
         flex-direction: column;
 
     }
-  
 }
    
 #toggle{
@@ -183,31 +229,34 @@ h1{
     margin-left:auto;
 }
 .m{
-    display: flex;
-    width: 2.5rem;
+   
+    width: 3.2rem;
     height: 2.5rem;
-    padding: .25rem .75rem;
+   background: transparent;
     font-size: 1.25rem;
     line-height: 1;
     align-self: center;
     border:1px solid  rgb(229, 229, 229);;
     margin-left: auto;
     margin-right: 5%;
+    padding: 0px 11px;
     border-radius: .25rem;
   
-    background: no-repeat center center;
-    background-size: 100% 100%;
-    background-image: url(burger-ico.svg);
+   
 }
 label{
-    display: flex;
-  
+    
+ 
+    background-size: 100% 100%;
+    background-image: url(burger-ico.svg);
     padding: .25rem .75rem;
  
-  
-    background: no-repeat center center;
+    height: 4.9vh;
+    
+    border-radius: .25rem;
+    /* width: 2rem; */
+    display: block;
     background-size: 100% 100%;
    
 
 }
-

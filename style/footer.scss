@@ -1,0 +1,93 @@
+
+
+  footer{
+    background-color: #56bc94;
+    color:white;
+    background-image: url("pattern-1.png");
+    padding-bottom:15px;
+  }
+  .footer-text{
+  flex-direction: column;
+  align-items: center;
+    display: flex;
+    padding-top: 50px;
+     p{
+        text-align: center;
+       
+        width: 45%;
+      }
+  }
+ 
+  .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        input , textarea{  /*error check this out*/
+        padding:15px;
+        border:transparent;
+        border-radius: .25rem;
+        margin-bottom: 15px;
+        width: 40%;
+      }
+  }
+ 
+  .btn-massege{
+  width: 15%;;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  
+  
+    button{
+        margin-left: auto;
+        width: 100%;
+        border: 1px solid #56bc94;;
+        color:white;
+        font-size:25px;
+        border-radius: .25rem;
+    
+        background-color: #317b5e;
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+        /*border: 1px solid #317b5e;*/
+    
+    }
+  
+  
+  }
+  
+  @media screen and (max-width:767px) {
+        cards{
+            flex-direction: column;
+            .plan{
+                margin: 10px auto;
+                width: 80%;
+            }
+            #mid-plan{
+                margin: 10px auto;
+            }
+            
+        }
+        .circle{
+            left:38%;
+        }
+        .footer-text{
+            p{
+                width: 85%;
+            }
+        }
+        .information{
+            input , textarea{
+                width: 90%;
+            }
+        }
+        .btn-massege{
+            width: 35%;
+        }
+       
+
+  }
+  
