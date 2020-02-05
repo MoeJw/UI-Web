@@ -1,12 +1,9 @@
 content{
-    
     background: black;
     position: relative;
     top:86px;   
-   
 }
 container{
- 
   padding-top:50px;
   display: flex;
   
@@ -83,10 +80,7 @@ cards{
       display: flex;
       padding:0px;
       flex-direction: column;
-      
-     
      justify-content: space-between;
-     
       list-style: none;
 
       li{
