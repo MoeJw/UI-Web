@@ -9,7 +9,12 @@ container{
  
   padding-top:50px;
   display: flex;
-  
+  #title-plan{
+    font-size: 1.9em;
+    margin:10px 0px;
+    color:#444;
+    font-family: 'Lato', arial, sans-serif;
+  }
   flex-direction: column;
   align-items: center;
   
@@ -74,6 +79,16 @@ cards{
   
   background-color:  #56bc94;;
 }
+.dollar-icon{
+  font-size: 19px;
+}
+.number-price-paln{
+  font-size: 28px;
+}
+.per-month{
+  line-height: 3;    
+  font-weight: 300;
+}
 
 
 .deal{
@@ -96,6 +111,9 @@ cards{
           text-align: center;
         margin:0 auto;
         border-bottom: 1px solid #efefef;
+        }
+        .disable-option{
+          color:#999;
         }
     }
    
